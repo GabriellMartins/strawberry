@@ -27,7 +27,8 @@ public class Client {
     public void start() {
         String message;
         try {
-            while ((message = input.readLine()) != null) {                output.println(message);
+            while ((message = input.readLine()) != null) {
+                output.println(message);
             }
 
         } catch (IOException e) {
