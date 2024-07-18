@@ -16,7 +16,7 @@ public class Client {
         try {
             socket = new Socket(address, port);
             input = new BufferedReader(new InputStreamReader(System.in));
-            output = new PrintWriter(socket.getOutputStream(), true)/
+            output = new PrintWriter(socket.getOutputStream(), true);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -29,7 +29,7 @@ public class Client {
         try {
             while ((message = input.readLine()) != null) {                output.println(message);
             }
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }
